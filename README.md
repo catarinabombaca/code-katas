@@ -15,4 +15,15 @@ Keep going till you get to 1.
 
 ## Rotate
 Write a function that rotates a slice by k elements. For example [1,2,3,4,5,6] rotated by 2 becomes [3,4,5,6,1,2].  
-Bonus: Try solving this without creating a copy of the slice.   
+Bonus: Try solving this without creating a copy of the slice.  
+
+##Square or square root
+Write a method, that will get an integer array as parameter and will process every number from this array.
+Return a new array with processing every number of the input-array like this:  
+If the number has an integer square root, take this, otherwise square the number.  
+
+###Example
+`[4,3,9,7,2,1] -> [2,9,3,49,4,1]`
+
+###Notes
+The input array will always contain only positive numbers, and will never be empty or null.
