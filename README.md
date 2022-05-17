@@ -12,3 +12,8 @@ Then keep dividing by 3
 100, 99, 33, 11, 12
 Keep going till you get to 1.
 100, 99, 33, 11, 12, 4, 3, 1
+
+## Rotate
+Write a function that rotates a slice by k elements. For example [1,2,3,4,5,6] rotated by 2 becomes [3,4,5,6,1,2].
+
+Bonus: Try solving this without creating a copy of the slice. 
