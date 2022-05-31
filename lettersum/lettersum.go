@@ -1,6 +1,8 @@
 package lettersum
 
-import "strings"
+import (
+	"strings"
+)
 
 func Execute(input string) int {
 	lettersAsValues := []rune(strings.ToLower(input))
