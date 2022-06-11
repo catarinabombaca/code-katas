@@ -17,9 +17,9 @@ func Execute() {
 
 func roll(sidesOfDice int, rollTimes int) Frequency {
 	frequencies := make(Frequency)
+	rand.Seed(time.Now().UnixNano())
 
 	for i := 0; i < rollTimes; i++ {
-		rand.Seed(time.Now().UnixNano())
 		frequencies[rand.Intn(sidesOfDice)+1]++
 	}
 

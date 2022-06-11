@@ -71,3 +71,13 @@ Note: Can your program compute fib(92)?
 Roll a six-sided die a million times. Print the frequency of each side coming up.
 
 Note: Run the program a few times. Do you get the same numbers every time? How can you fix that?
+
+## Sum of time durations
+
+Given a list of time duration strings, calculate the sum of those durations.
+
+Durations are in the hours:minutes:seconds format. For instance, 3:01:12 denotes 3 hours, 1 minute, and 12 seconds. Leading 0s are optional only for the hour parts.
+
+Example:
+
+SumOfTimes(["12:32", "34:01", "15:23", "9:27", "55:22", "25:56"]) should output 2:32:41
