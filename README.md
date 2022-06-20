@@ -81,3 +81,19 @@ Durations are in the hours:minutes:seconds format. For instance, 3:01:12 denotes
 Example:
 
 SumOfTimes(["12:32", "34:01", "15:23", "9:27", "55:22", "25:56"]) should output 2:32:41
+
+## Align
+
+Align (left/right/centre) a string within a given width.
+
+Fill the empty spaces with a dot '.'
+
+e.g. for the string "SaltPay" and width 11
+
+align(“SaltPay”, 11, "L") gives "SaltPay....", aligned to the left
+align(“SaltPay”, 11, "R") gives "....SaltPay", aligned to the right
+align(“SaltPay”, 11, "C") gives "..SaltPay..", aligned in the centre
+
+When centre alignment is not exactly possible, leave more spaces to the left.
+
+e.g. align(”SaltPay”, 12, "C") gives "...SaltPay.."
