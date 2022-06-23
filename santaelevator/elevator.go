@@ -1,16 +1,30 @@
 package santaelevator
 
-func Execute(instructions string) int {
-	var floor = 0
+func Execute(instructions string) (int, int) {
+	var currentFloor = 0
+	var position = 0
 
-	for _, instruction := range instructions {
+	for i, instruction := range instructions {
 		if instruction == 40 {
-			floor++
+			currentFloor++
 		}
+
 		if instruction == 41 {
-			floor--
+			currentFloor--
+		}
+
+		if isBasementPosition(currentFloor) && position == 0 {
+			position += i+1
 		}
 	}
 
-	return floor
+	return currentFloor, position
+}
+
+func isBasementPosition(floor int) bool {
+	if floor == -1 {
+		return true
+	} else {
+		return false
+	}
 }
